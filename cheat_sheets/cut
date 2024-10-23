@@ -1,0 +1,8 @@
+# Extract the first 5 characters from each line
+cut -c1-5 file.txt
+
+# Extract the second field from a CSV file
+cut -d',' -f2 file.csv
+
+# Extract columns using tab as a delimiter
+cut -f1,3 file.tsv

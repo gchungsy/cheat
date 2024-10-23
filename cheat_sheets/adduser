@@ -1,0 +1,8 @@
+# adduser
+# A command to add a new user (Debian-based systems).
+
+# Create a new user and prompt for details:
+adduser username
+
+# Add an existing user to a group:
+adduser username group_name

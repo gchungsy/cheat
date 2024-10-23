@@ -1,0 +1,11 @@
+# chown
+# A command to change file owner and group.
+
+# Change owner of a file:
+chown user_name file_name
+
+# Change owner and group of a file:
+chown user_name:group_name file_name
+
+# Recursively change ownership of a directory:
+chown -R user_name:group_name /path/to/directory

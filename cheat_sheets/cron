@@ -1,0 +1,11 @@
+# cron
+# A time-based job scheduler.
+
+# List all cron jobs for the current user:
+crontab -l
+
+# Edit the crontab for the current user:
+crontab -e
+
+# Schedule a job to run at 5 AM every day:
+0 5 * * * /path/to/command

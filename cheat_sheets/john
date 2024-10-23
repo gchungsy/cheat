@@ -1,0 +1,11 @@
+# john
+# A password cracking tool.
+
+# Crack a password hash:
+john hash.txt
+
+# Show cracked passwords:
+john --show hash.txt
+
+# Use a wordlist to crack a hash:
+john --wordlist=passwords.txt hash.txt

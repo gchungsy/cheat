@@ -1,0 +1,20 @@
+# tmux
+# A terminal multiplexer for managing multiple terminal sessions.
+
+# Start a new tmux session:
+tmux
+
+# Attach to an existing session:
+tmux attach
+
+# Detach from a session:
+Ctrl + b, then d
+
+# List all sessions:
+tmux ls
+
+# Split the window vertically:
+Ctrl + b, then %
+
+# Split the window horizontally:
+Ctrl + b, then "

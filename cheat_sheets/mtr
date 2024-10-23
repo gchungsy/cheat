@@ -1,0 +1,8 @@
+# mtr
+# A network diagnostic tool combining ping and traceroute.
+
+# Run MTR to a host:
+mtr example.com
+
+# Run MTR in report mode:
+mtr -r example.com

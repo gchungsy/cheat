@@ -1,0 +1,15 @@
+# netcat (nc)
+# A versatile networking tool for debugging and data transfer.
+
+# Listen on a port for incoming connections:
+nc -l 1234
+
+# Connect to a remote host:
+nc 192.168.1.1 1234
+
+# Transfer a file over TCP:
+nc -l 1234 > received_file.txt
+nc 192.168.1.1 1234 < file.txt
+
+# Scan for open ports:
+nc -zv 192.168.1.1 1-1000

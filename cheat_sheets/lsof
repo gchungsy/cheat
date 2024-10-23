@@ -1,0 +1,11 @@
+# lsof
+# A command to list open files.
+
+# List all open files:
+lsof
+
+# List open files by a specific user:
+lsof -u username
+
+# List all open network connections:
+lsof -i

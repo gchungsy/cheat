@@ -1,0 +1,11 @@
+# diff
+# A command to compare files line by line.
+
+# Compare two files:
+diff file1.txt file2.txt
+
+# Ignore case differences:
+diff -i file1.txt file2.txt
+
+# Show differences side-by-side:
+diff -y file1.txt file2.txt

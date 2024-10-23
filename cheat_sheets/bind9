@@ -1,0 +1,14 @@
+# bind9
+# A DNS server software.
+
+# Start bind9 service:
+service bind9 start
+
+# Check bind9 configuration syntax:
+named-checkconf /etc/bind/named.conf
+
+# Restart bind9 service:
+service bind9 restart
+
+# Reload zones:
+rndc reload

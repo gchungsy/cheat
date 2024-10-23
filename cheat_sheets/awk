@@ -1,0 +1,11 @@
+# awk
+# A pattern scanning and processing language.
+
+# Print the second column of a file:
+awk '{print $2}' file.txt
+
+# Print lines where the third column is greater than 100:
+awk '$3 > 100' file.txt
+
+# Use a custom field separator:
+awk -F "," '{print $1}' file.csv

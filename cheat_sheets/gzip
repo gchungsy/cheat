@@ -1,0 +1,8 @@
+# gzip
+# A tool for file compression.
+
+# Compress a file:
+gzip file.txt
+
+# Decompress a file:
+gzip -d file.txt.gz

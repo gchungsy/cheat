@@ -1,0 +1,11 @@
+# xargs
+# A command to build and execute command lines from standard input.
+
+# Delete files listed from a find command
+find /path/to/files -name "*.log" | xargs rm
+
+# Execute a command in parallel
+cat files.txt | xargs -P 4 -I {} some_command {}
+
+# Pass output as arguments to a command
+echo "file1 file2 file3" | xargs rm

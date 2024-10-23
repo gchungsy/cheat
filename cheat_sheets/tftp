@@ -1,0 +1,11 @@
+# tftp
+# A command for transferring files over the Trivial File Transfer Protocol (TFTP).
+
+# Connect to a TFTP server:
+tftp 192.168.1.1
+
+# Download a file from the server:
+get file_name
+
+# Upload a file to the server:
+put file_name

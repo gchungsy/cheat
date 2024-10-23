@@ -1,0 +1,14 @@
+# httpie
+# A user-friendly HTTP client for the command line.
+
+# Make a GET request:
+http https://example.com
+
+# Send data via POST:
+http POST https://example.com name=value
+
+# Include headers in the request:
+http https://example.com 'User-Agent:MyAgent'
+
+# Follow redirects:
+http --follow https://example.com

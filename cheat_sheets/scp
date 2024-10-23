@@ -1,0 +1,8 @@
+# scp
+# A command to securely copy files over SSH.
+
+# Copy a file from local to remote:
+scp file_name user@remote:/path/to/destination
+
+# Copy a file from remote to local:
+scp user@remote:/path/to/file /local/path

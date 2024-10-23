@@ -1,0 +1,14 @@
+# sed
+# A stream editor for filtering and transforming text.
+
+# Replace the first occurrence of a pattern in each line:
+sed 's/old/new/' file.txt
+
+# Replace all occurrences of a pattern in each line:
+sed 's/old/new/g' file.txt
+
+# Delete lines containing a pattern:
+sed '/pattern/d' filename
+
+# Replace text inline (edit the file in place)
+sed -i 's/old_string/new_string/g' filename

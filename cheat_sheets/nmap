@@ -1,0 +1,17 @@
+# nmap
+# A network discovery and security auditing tool.
+
+# Scan a single IP address:
+nmap 192.168.1.1
+
+# Scan a range of IP addresses:
+nmap 192.168.1.1-254
+
+# Scan a specific port:
+nmap -p 80 192.168.1.1
+
+# Scan for open ports and services:
+nmap -sV 192.168.1.1
+
+# Perform a stealth SYN scan:
+nmap -sS 192.168.1.1

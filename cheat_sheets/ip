@@ -1,0 +1,14 @@
+# ip
+# A command to show/manipulate routing, devices, and tunnels.
+
+# Display all network interfaces:
+ip addr show
+
+# Display routing table:
+ip route
+
+# Bring an interface up:
+ip link set eth0 up
+
+# Assign an IP address to an interface:
+ip addr add 192.168.1.100/24 dev eth0

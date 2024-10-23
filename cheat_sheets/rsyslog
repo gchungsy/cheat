@@ -1,0 +1,11 @@
+# rsyslog
+# A system for forwarding log messages in an IP network.
+
+# Start rsyslog:
+service rsyslog start
+
+# Check the rsyslog configuration:
+rsyslogd -N1
+
+# Restart rsyslog service:
+service rsyslog restart

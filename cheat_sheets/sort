@@ -1,0 +1,11 @@
+# Sort alphabetically (default)
+sort file.txt
+
+# Sort numerically
+sort -n file.txt
+
+# Sort by the second column
+sort -k2 file.txt
+
+# Reverse sort
+sort -r file.txt

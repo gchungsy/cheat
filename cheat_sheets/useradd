@@ -1,0 +1,11 @@
+# useradd
+# A command to create a new user.
+
+# Create a new user:
+useradd username
+
+# Create a user with a home directory:
+useradd -m username
+
+# Specify a custom shell for the user:
+useradd -s /bin/bash username

@@ -1,0 +1,8 @@
+# iftop
+# A tool for monitoring network bandwidth usage.
+
+# Monitor bandwidth on a specific interface:
+iftop -i eth0
+
+# Show cumulative bandwidth:
+iftop -t

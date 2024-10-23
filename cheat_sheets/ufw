@@ -1,0 +1,14 @@
+# ufw
+# A simple firewall manager for iptables.
+
+# Enable ufw:
+ufw enable
+
+# Allow incoming traffic on port 22 (SSH):
+ufw allow 22
+
+# Deny incoming traffic from a specific IP:
+ufw deny from 192.168.1.100
+
+# Check the status of ufw:
+ufw status

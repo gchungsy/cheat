@@ -1,0 +1,8 @@
+# nikto
+# A web server scanner.
+
+# Scan a web server for vulnerabilities:
+nikto -h http://example.com
+
+# Scan a specific port:
+nikto -h http://example.com -p 8080

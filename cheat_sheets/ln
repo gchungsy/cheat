@@ -1,0 +1,11 @@
+# ln
+# A command to create links between files.
+
+# Create a hard link:
+ln source_file link_name
+
+# Create a symbolic (soft) link:
+ln -s source_file link_name
+
+# Overwrite an existing symbolic link:
+ln -sf source_file link_name

@@ -1,0 +1,20 @@
+# curl
+# A command-line tool for transferring data using various network protocols.
+
+# Fetch the content of a URL:
+curl https://example.com
+
+# Save the output to a file:
+curl -o output.txt https://example.com
+
+# Follow redirects:
+curl -L https://example.com
+
+# Send data via POST:
+curl -X POST -d "param1=value1" https://example.com
+
+# Download a file with progress bar:
+curl -O https://example.com/file.zip
+
+# Include headers in the output:
+curl -i https://example.com

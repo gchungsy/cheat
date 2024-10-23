@@ -1,0 +1,8 @@
+# Sync files between local directories
+rsync -av /source/directory /destination/directory
+
+# Sync files over SSH
+rsync -av -e ssh /source/directory user@remote:/path
+
+# Show progress while copying
+rsync -av --progress /source/directory /destination/directory

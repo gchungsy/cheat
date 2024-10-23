@@ -1,0 +1,11 @@
+# dnsmasq
+# A lightweight DNS and DHCP server.
+
+# Start dnsmasq:
+dnsmasq
+
+# Specify a configuration file:
+dnsmasq -C /etc/dnsmasq.conf
+
+# Test configuration syntax:
+dnsmasq --test

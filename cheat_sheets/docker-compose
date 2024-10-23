@@ -1,0 +1,17 @@
+# docker-compose
+# A tool for defining and running multi-container Docker applications.
+
+# Start services defined in docker-compose.yml:
+docker-compose up
+
+# Start services in detached mode:
+docker-compose up -d
+
+# Stop services:
+docker-compose down
+
+# Build or rebuild services:
+docker-compose build
+
+# List running services:
+docker-compose ps

@@ -1,0 +1,11 @@
+# Create a tar archive (no compression)
+tar cvf archive.tar /path/to/files
+
+# Create a gzip-compressed tar archive
+tar czvf archive.tar.gz /path/to/files
+
+# Extract a tar.gz archive
+tar xzvf archive.tar.gz
+
+# Extract to a specific directory
+tar xzvf archive.tar.gz -C /path/to/extract

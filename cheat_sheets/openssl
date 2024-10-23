@@ -1,0 +1,17 @@
+# openssl
+# A toolkit for SSL/TLS and cryptography operations.
+
+# Generate a private key:
+openssl genpkey -algorithm RSA -out private.key
+
+# Generate a CSR (Certificate Signing Request):
+openssl req -new -key private.key -out request.csr
+
+# Verify an SSL certificate:
+openssl verify certificate.crt
+
+# Display the contents of a certificate:
+openssl x509 -in certificate.crt -text -noout
+
+# Test SSL/TLS connection to a server:
+openssl s_client -connect example.com:443

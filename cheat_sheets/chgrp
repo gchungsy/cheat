@@ -1,0 +1,8 @@
+# chgrp
+# A command to change the group ownership of a file.
+
+# Change the group of a file:
+chgrp group_name file_name
+
+# Recursively change group ownership of a directory:
+chgrp -R group_name /path/to/directory

@@ -1,0 +1,17 @@
+# npm
+# A package manager for JavaScript.
+
+# Install all dependencies listed in package.json:
+npm install
+
+# Install a package globally:
+npm install -g package_name
+
+# Install a package as a dev dependency:
+npm install --save-dev package_name
+
+# Uninstall a package:
+npm uninstall package_name
+
+# Update a package:
+npm update package_name

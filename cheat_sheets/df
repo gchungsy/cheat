@@ -1,0 +1,8 @@
+# df
+# A command to report disk space usage.
+
+# Show disk usage of all mounted filesystems:
+df -h
+
+# Show disk usage of a specific filesystem:
+df -h /dev/sda1

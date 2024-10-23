@@ -1,0 +1,11 @@
+# fail2ban
+# A tool to prevent brute-force attacks by blocking IPs.
+
+# Start fail2ban:
+service fail2ban start
+
+# Ban a specific IP address:
+fail2ban-client set sshd banip 192.168.1.100
+
+# Unban a specific IP address:
+fail2ban-client set sshd unbanip 192.168.1.100

@@ -1,0 +1,18 @@
+# find
+# A command to search for files in a directory hierarchy.
+
+# Find files by name:
+find /path/to/search -name "filename"
+
+# Find files by type (f for files, d for directories):
+find /path/to/search -type f -name "filename"
+
+# Find files modified in the last N days:
+find /path/to/search -mtime -N
+
+# Execute a command on found files:
+find /path/to/search -name "*.txt" -exec rm {} \;
+
+# Find files larger than 100MB
+find /path/to/search -size +100M
+

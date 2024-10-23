@@ -1,0 +1,17 @@
+# dnsutils
+# A set of DNS client utilities, such as `dig`, `nslookup`.
+
+# Query A record for a domain:
+dig example.com
+
+# Query a specific DNS server:
+dig @8.8.8.8 example.com
+
+# Query MX records for a domain:
+dig example.com MX
+
+# Lookup a domain using nslookup:
+nslookup example.com
+
+# Query the reverse DNS (PTR record) for an IP address:
+dig -x 8.8.8.8

@@ -1,0 +1,12 @@
+# Simple pattern search in a file
+grep "pattern" filename
+
+# Recursive search in all files in a directory
+grep -r "pattern" /path/to/directory
+
+# Case-insensitive search
+grep -i "pattern" filename
+
+# Invert match (find lines not matching the pattern)
+grep -v "pattern" filename
+

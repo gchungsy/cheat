@@ -1,0 +1,20 @@
+# docker
+# A platform for containerizing applications.
+
+# Pull a Docker image:
+docker pull image_name
+
+# List all Docker containers:
+docker ps -a
+
+# Start a Docker container:
+docker start container_id
+
+# Stop a running container:
+docker stop container_id
+
+# Build an image from a Dockerfile:
+docker build -t image_name .
+
+# Run a container in interactive mode:
+docker run -it image_name

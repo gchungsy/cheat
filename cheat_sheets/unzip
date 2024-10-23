@@ -1,0 +1,14 @@
+# unzip
+# A utility for extracting files from ZIP archives.
+
+# Extract all files from a ZIP archive:
+unzip file.zip
+
+# List the contents of a ZIP archive without extracting:
+unzip -l file.zip
+
+# Extract to a specific directory:
+unzip file.zip -d /path/to/extract
+
+# Overwrite existing files without prompting:
+unzip -o file.zip

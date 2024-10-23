@@ -1,0 +1,8 @@
+# sqlmap
+# An automated SQL injection tool.
+
+# Scan a URL for SQL injection:
+sqlmap -u "http://example.com/page?id=1"
+
+# Scan with a custom user-agent:
+sqlmap -u "http://example.com/page?id=1" --user-agent="Mozilla/5.0"

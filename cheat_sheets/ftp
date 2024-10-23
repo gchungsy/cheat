@@ -1,0 +1,11 @@
+# ftp
+# A command-line FTP client.
+
+# Open an FTP connection:
+ftp ftp.example.com
+
+# Download a file:
+get file_name
+
+# Upload a file:
+put file_name

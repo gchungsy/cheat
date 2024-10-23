@@ -1,0 +1,8 @@
+# rcp
+# A command to copy files between machines over the network.
+
+# Copy a file from local to remote:
+rcp file_name remote:/path/to/destination
+
+# Copy a file from remote to local:
+rcp remote:/path/to/file /local/path

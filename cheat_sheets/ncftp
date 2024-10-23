@@ -1,0 +1,11 @@
+# ncftp
+# An FTP client program.
+
+# Open an FTP connection:
+ncftp ftp.example.com
+
+# Upload a file:
+put file_name
+
+# Download a file:
+get file_name

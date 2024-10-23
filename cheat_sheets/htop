@@ -1,0 +1,17 @@
+# htop
+# An interactive process viewer for Unix systems.
+
+# Launch htop:
+htop
+
+# Sort processes by CPU usage:
+F6, then select CPU%
+
+# Kill a process:
+F9, then select the process
+
+# Display processes in a tree view:
+F5
+
+# Search for a process:
+F3, then type process name

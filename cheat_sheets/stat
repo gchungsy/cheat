@@ -1,0 +1,8 @@
+# stat
+# A command to display detailed information about files or file systems.
+
+# Show file information:
+stat file_name
+
+# Show file system information:
+stat -f file_name

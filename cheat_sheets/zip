@@ -1,0 +1,11 @@
+# zip
+# A tool for creating ZIP archives.
+
+# Create a ZIP archive:
+zip archive.zip file1 file2
+
+# Extract a ZIP archive:
+unzip archive.zip
+
+# Create a ZIP archive of a directory:
+zip -r archive.zip /path/to/directory

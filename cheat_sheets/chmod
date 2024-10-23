@@ -1,0 +1,11 @@
+# chmod
+# A command to change file permissions.
+
+# Grant read, write, and execute permissions to the owner:
+chmod u+rwx file_name
+
+# Remove write permissions for the group:
+chmod g-w file_name
+
+# Set specific permissions using octal notation (rwxr-xr-x):
+chmod 755 file_name

@@ -1,0 +1,11 @@
+# chattr
+# A command to change file attributes on Linux.
+
+# Make a file immutable (cannot be modified or deleted):
+chattr +i file_name
+
+# Remove the immutable attribute:
+chattr -i file_name
+
+# List file attributes:
+lsattr file_name

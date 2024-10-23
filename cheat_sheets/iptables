@@ -1,0 +1,17 @@
+# iptables
+# A command-line firewall utility for configuring network packet filtering rules.
+
+# List all rules in the default filter table:
+iptables -L
+
+# Allow incoming traffic on port 80 (HTTP):
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+
+# Block incoming traffic from a specific IP:
+iptables -A INPUT -s 192.168.1.100 -j DROP
+
+# Delete a specific rule:
+iptables -D INPUT 1
+
+# Save iptables rules:
+iptables-save > /etc/iptables/rules.v4

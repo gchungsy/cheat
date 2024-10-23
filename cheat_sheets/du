@@ -1,0 +1,8 @@
+# du
+# A command to estimate file space usage.
+
+# Show disk usage of a directory:
+du -sh /path/to/directory
+
+# Show disk usage of files and directories recursively:
+du -ah /path/to/directory

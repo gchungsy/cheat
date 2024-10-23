@@ -1,0 +1,8 @@
+# hydra
+# A brute-force password cracking tool.
+
+# Brute-force SSH login:
+hydra -l username -P passwords.txt ssh://192.168.1.1
+
+# Brute-force HTTP login:
+hydra -l admin -P passwords.txt 192.168.1.1 http-get /login

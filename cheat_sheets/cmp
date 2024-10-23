@@ -1,0 +1,8 @@
+# cmp
+# A command to compare two files byte by byte.
+
+# Compare two files:
+cmp file1 file2
+
+# Show differences in verbose mode:
+cmp -l file1 file2
