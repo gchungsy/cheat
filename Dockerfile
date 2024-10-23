@@ -13,7 +13,7 @@ COPY app.py .
 COPY cheat_sheets/ ./cheat_sheets/
 
 # Expose the port the app runs on
-EXPOSE 5000
+EXPOSE 5001
 
 # Run the application with Gunicorn in production mode
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5001", "app:app"]
