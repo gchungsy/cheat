@@ -10,9 +10,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application files to the container
 COPY app.py .
+COPY cheat_sheets/ ./cheat_sheets/
 
 # Expose the port the app runs on
 EXPOSE 5000
 
-# Run the application in non-debug mode
-CMD ["python", "app.py"]
+# Run the application with Gunicorn in production mode
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]

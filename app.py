@@ -1,23 +1,25 @@
-from flask import Flask
-from flask_restful import Api, Resource
-import time
+from flask import Flask, Response
+import os
 
 app = Flask(__name__)
-api = Api(app)
 
-class HealthCheck(Resource):
-    def get(self):
-        return {"status": "ok", "timestamp": time.time()}
+# Function to load cheat sheet from a text file
+def load_cheat_sheet(command):
+    file_path = f"{command}.txt"
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as file:
+            return file.read()
+    return None
 
-class CheatSheet(Resource):
-    def get(self, command):
-        usage = {
-            "nmap": "nmap is a network scanning tool. Usage: nmap [options] [target]",
-        }
-        return {command: usage.get(command, "No usage information available.")}
+@app.route('/<command>', methods=['GET'])
+def get_cheat_sheet(command):
+    command = command.lower()  # Normalize the command to lowercase
+    cheat_sheet = load_cheat_sheet(command)
 
-api.add_resource(HealthCheck, '/healthz')
-api.add_resource(CheatSheet, '/cheat/<string:command>')
+    if cheat_sheet:
+        return Response(cheat_sheet, mimetype='text/plain')
+    else:
+        return Response("Cheat sheet not found for the specified command.", status=404)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=False)
