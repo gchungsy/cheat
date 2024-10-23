@@ -1,5 +1,6 @@
 from flask import Flask, Response
 import os
+import time
 
 app = Flask(__name__)
 
@@ -10,6 +11,10 @@ def load_cheat_sheet(command):
         with open(file_path, 'r') as file:
             return file.read()
     return None
+
+@app.route('/healthz')
+def health(self):
+    return {"status": "ok", "timestamp": time.time()}
 
 @app.route('/<command>', methods=['GET'])
 def get_cheat_sheet(command):
